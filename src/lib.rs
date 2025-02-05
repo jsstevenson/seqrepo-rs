@@ -22,3 +22,6 @@ pub use crate::fasta::*;
 pub use crate::interface::*;
 #[cfg(feature = "impl")]
 pub use crate::repo::*;
+pub(crate) mod dataproxy;
+#[cfg(feature = "impl")]
+pub use crate::dataproxy::*;

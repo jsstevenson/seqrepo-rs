@@ -24,6 +24,7 @@ impl = ["dep:chrono", "dep:noodles-bgzf", "dep:noodles-core", "dep:noodles-fasta
 cached = ["impl"]
 
 [dependencies]
+cached = "0.49.2"
 chrono = { version = "0.4", optional = true }
 noodles-bgzf = { version = "0.26", optional = true }
 noodles-core = { version = "0.14", optional = true }

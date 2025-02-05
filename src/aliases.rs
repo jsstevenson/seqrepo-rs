@@ -194,6 +194,7 @@ impl AliasDb {
         }
         sql.push_str(" ORDER BY seq_id, namespace, alias");
         trace!("Executing: {:?} with params {:?}", &sql, &params);
+        println!("Executing: {:?} with params {:?}", &sql, &params);
 
         let locked_conn = self.conn.lock().map_err(|_| Error::MutexSqlite)?;
 
